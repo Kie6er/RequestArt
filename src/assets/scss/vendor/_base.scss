@@ -1,0 +1,201 @@
+.nav {
+	// .nav__link
+	&__link {
+		color: #fff;
+		font-size: 2rem;
+		margin-right: 5rem;
+		transition: color 0.2s linear;
+		padding: 1rem 0;
+
+		&:last-child {
+			font-size: 1.8rem;
+			line-height: normal;
+			margin-right: 0;
+		}
+
+		&:hover,
+		&:focus-visible,
+		&:active {
+			transition: color 0.2s linear;
+			color: $green;
+		}
+	}
+}
+
+.main {
+	flex: 1 1 auto;
+	padding-top: 6.7rem;
+
+	@include bp(48em) {
+		padding-top: 13.4rem;
+	}
+}
+.page {
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+
+.social {
+	// .social__list
+	&__list {
+		display: flex;
+		align-items: center;
+		column-gap: 1.6rem;
+
+		li {
+			font-size: 5.4rem;
+			line-height: 1;
+
+			a {
+				transition: color 0.1s linear;
+			}
+
+			a:hover,
+			a:focus-visible {
+				transition: color 0.1s linear;
+				color: $white;
+			}
+		}
+	}
+}
+
+.btn {
+	position: relative;
+	padding: 1.6rem 1.6rem 1.9rem 3.3rem;
+	transition: all 0.2s linear;
+
+	color: $main;
+	font-family: "Druk Cyr";
+	font-size: 2.0093rem;
+	font-weight: 500;
+	line-height: 84%; /* 16.878px */
+	letter-spacing: 0.1607rem;
+	text-transform: uppercase;
+
+	border: 0.1rem solid $main;
+	border-radius: 9.5129rem;
+
+	background: none;
+
+	&::after {
+		content: "";
+		display: inline-block;
+		border-style: solid;
+		border-width: 0.7rem 0 0.7rem 1rem;
+		border-color: transparent transparent transparent $main;
+
+		margin-left: 2.637rem;
+		transition: all 0.2s linear;
+	}
+
+	&:hover,
+	&:focus-visible {
+		transition: all 0.2s linear;
+		background-color: $main;
+		color: $white;
+
+		&::after {
+			transition: all 0.2s linear;
+			border-color: transparent transparent transparent $white;
+		}
+	}
+
+	&--green {
+		color: $green;
+		border: 0.1rem solid $green;
+
+		&::after {
+			border-color: transparent transparent transparent $green;
+		}
+
+		&:hover,
+		&:focus-visible {
+			transition: all 0.2s linear;
+			background-color: $green;
+			color: $main;
+
+			&::after {
+				transition: all 0.2s linear;
+				border-color: transparent transparent transparent $main;
+			}
+		}
+	}
+
+	&--detail {
+		display: flex;
+		align-items: center;
+		gap: 1.6rem;
+		background: none;
+
+		strong {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			width: 5.2rem;
+			height: 5.2rem;
+			background-color: $pink;
+			border-radius: 50%;
+
+			font-size: 1.65rem;
+		}
+
+		span {
+			color: $pink;
+			font-family: Druk Cyr;
+			font-size: 2rem;
+			font-weight: 500;
+			line-height: 84%; /* 16.878px */
+			letter-spacing: 0.1607rem;
+			text-transform: uppercase;
+		}
+	}
+
+	&--white {
+		color: $white;
+		border: 0.1rem solid $white;
+
+		&::after {
+			border-color: transparent transparent transparent $white;
+		}
+
+		&:hover,
+		&:focus-visible {
+			transition: all 0.2s linear;
+			background-color: $white;
+			color: $main;
+
+			&::after {
+				transition: all 0.2s linear;
+				border-color: transparent transparent transparent $main;
+			}
+		}
+	}
+
+	@include bp(48em) {
+		padding: 2.8rem 6.1rem;
+		font-size: 4rem;
+		letter-spacing: 0.32rem;
+		text-transform: uppercase;
+
+		&::after {
+			margin-left: 4rem;
+			border-width: 1.4rem 0 1.4rem 2rem;
+		}
+	}
+}
+
+.desktop {
+	@media (max-width: 48em) {
+		display: none;
+	}
+}
+
+.mobile {
+	display: none;
+
+	@media (max-width: 48em) {
+		display: block;
+	}
+}

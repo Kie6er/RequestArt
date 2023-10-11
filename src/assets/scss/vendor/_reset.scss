@@ -1,0 +1,169 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	font-style: normal;
+	font-weight: normal;
+	height: 100%;
+	width: 100%;
+	line-height: $lineHeight;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-animation: bugfix infinite 1s;
+}
+
+html {
+	font-family: $font;
+	font-size: 0.5208335vw; // на разрешении 1920 0.520835vw === 10px
+}
+
+body {
+	color: $fontColor; // цвет по умолчанию текста по сайту
+	background-color: $bodyColor;
+	&.lock {
+		touch-action: none;
+		overflow: hidden;
+	}
+}
+
+input,
+button,
+textarea {
+	line-height: inherit;
+	color: inherit;
+	-webkit-animation: bugfix infinite 1s;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	text-align: inherit;
+	font: inherit;
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a {
+	color: unset;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: contain;
+}
+
+button,
+input,
+a,
+textarea {
+	outline: none;
+	cursor: pointer;
+	font: inherit;
+	&:focus {
+		outline: none;
+	}
+	&:active {
+		outline: none;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font: inherit;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+section {
+	margin-bottom: $sectionMargin;
+
+	@include bp(48em) {
+		margin-bottom: $sectionMarginMobile;
+	}
+}
+
+.container {
+	width: $containerWidth;
+	margin: 0 auto;
+}
+
+@media (max-width: 48em) {
+	html {
+		font-size: 5px;
+		font-size: 1.5625vw;
+		font-size: calc((100 / $mobileLayout) * 5vw); // где 375 это ширина моб версии макета
+		-webkit-text-size-adjust: none;
+	}
+
+	body {
+		-webkit-text-size-adjust: none;
+	}
+
+	.container {
+		padding: 0 $containerPadding; // в моб версии отступ от края задаем для всех контейнеров, а там где не нужно можем точечно убрать
+		width: 100%;
+	}
+}

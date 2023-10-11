@@ -1,0 +1,53 @@
+.links {
+	margin: 0;
+	// .links__inner
+	&__inner {
+		padding-top: 5.3rem;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		@include bp(48em) {
+			padding-top: 0;
+		}
+	}
+	// .links__item
+	&__item {
+		display: block;
+		width: 100%;
+
+		color: #fff;
+		font-family: "Druk Cyr";
+		font-size: 10rem;
+		font-weight: 500;
+		line-height: normal; /* 233.87% */
+		text-align: center;
+		text-transform: uppercase;
+
+		background-color: $main;
+		border-top: 0.1rem solid rgba($green, 0.5);
+		transition: all 0.2s linear;
+
+		&:hover,
+		&:focus-visible {
+			transition: all 0.2s linear;
+			color: $main;
+			background-color: $orange;
+		}
+
+		@include bp(48em) {
+			font-size: 10rem;
+			line-height: 1.1; /* 55px */
+			padding: 2.4rem 0;
+		}
+	}
+}
+.link-form {
+	font-size: 19.9646rem;
+	padding: 1.5rem 0;
+
+	@include bp(48em) {
+		font-size: 11rem;
+		padding: 2.4rem 0 10rem 0;
+	}
+}

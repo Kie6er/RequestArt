@@ -1,0 +1,64 @@
+.nft-mobile {
+	display: none;
+	@include bp(48em) {
+		display: block;
+	}
+	// .nft-mobile__top
+	&__top {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		margin-bottom: 6.6rem;
+	}
+	// .nft-mobile__title
+	&__title {
+		color: $main;
+		text-align: center;
+		font-family: "Druk Cyr";
+		font-size: 10rem;
+		font-weight: 500;
+		line-height: 110%; /* 55px */
+		text-transform: uppercase;
+		width: 90%;
+		margin: 0 auto 2.4rem auto;
+	}
+	// .nft-mobile__description
+	&__description {
+		color: $darkGray;
+		text-align: center;
+		font-size: 2.8rem;
+
+		width: 93%;
+		margin: 0 auto 6rem auto;
+	}
+	// .nft-mobile__wrapper
+	&__wrapper {
+		display: flex;
+		align-items: center;
+	}
+	// .nft-mobile__card
+	&__card {
+		position: static;
+		height: 67rem;
+		padding: 2.4rem;
+	}
+}
+.nft-card--bg--rat {
+	@include bp(48em) {
+		background:
+			url(../images/NFT/img-1.webp) 2.8rem 5rem / 56.4rem no-repeat,
+			linear-gradient(223deg, #8792ed 1.18%, #5f6eda 34.96%, #6778df 68.58%, #8792ed 100%);
+	}
+}
+.nft-card--bg--snail {
+	@include bp(48em) {
+		background:
+			url(../images/NFT/img-2.webp) -7rem 0 / 69rem no-repeat,
+			linear-gradient(226deg, #455265 0%, #11161e 40.66%, #11161e 60.6%, #455265 103.07%);
+	}
+}
+
+.swiper-slide {
+	width: 65.8rem;
+}

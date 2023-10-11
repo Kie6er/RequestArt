@@ -1,0 +1,20 @@
+@import "vars";
+@import "mixins";
+@import "vendor/reset";
+@import "vendor/base";
+
+// Подключить если есть локальные файлы шрифтов
+@import "_fonts";
+@import "vendor/iconFont";
+
+// Блоки
+@import "blocks/main/header-desktop";
+@import "blocks/main/header-mobile";
+@import "blocks/main/footer-desktop";
+@import "blocks/main/footer-mobile";
+@import "blocks/nft-desktop";
+@import "blocks/nft-mobile";
+@import "blocks/links";
+@import "blocks/tariff";
+@import "blocks/advantage";
+@import "blocks/intro";
