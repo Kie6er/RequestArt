@@ -5,731 +5,144 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 	<title>Request ART</title>
 </head>
 
 <body>
 	<div class="page">
 		<header class="header">
-			<div class="header-desktop">
-				<div class="header-desktop__container container">
-					<div class="header-desktop__inner">
-						<div class="header-desktop__logo">
-							<a href="#" tabindex="0"><img src="assets/images/logo.svg" alt="Логотип"></a>
+			<div class="header__container container">
+				<div class="header__inner">
+					<div class="header__burger-btn burger-btn">
+						<div class="burger-btn__btn">
+							<span></span>
+							<span></span>
+							<span></span>
 						</div>
-						<nav class="header-desktop__nav nav">
-							<a class="nav__link" href="#">Услуги</a>
-							<a class="nav__link" href="#">Портфолио</a>
-							<a class="nav__link" href="#">Статьи</a>
-							<a class="nav__link" href="#">О нас</a>
-							<a class="nav__link" href="#">Контакты</a>
-							<a class="nav__link" href="tel:84958592136">+7 (495) 859-21-36</a>
-						</nav>
+						<div class="burger-btn__close">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+								fill="none">
+								<path fill-rule="evenodd" clip-rule="evenodd"
+									d="M0.292893 0.292893C0.683417 -0.0976311 1.31658 -0.0976311 1.70711 0.292893L10 8.58579L18.2929 0.292893C18.6834 -0.0976311 19.3166 -0.0976311 19.7071 0.292893C20.0976 0.683417 20.0976 1.31658 19.7071 1.70711L11.4142 10L19.7071 18.2929C20.0976 18.6834 20.0976 19.3166 19.7071 19.7071C19.3166 20.0976 18.6834 20.0976 18.2929 19.7071L10 11.4142L1.70711 19.7071C1.31658 20.0976 0.683417 20.0976 0.292893 19.7071C-0.0976311 19.3166 -0.0976311 18.6834 0.292893 18.2929L8.58579 10L0.292893 1.70711C-0.0976311 1.31658 -0.0976311 0.683417 0.292893 0.292893Z"
+									fill="white" />
+							</svg>
+						</div>
 					</div>
+					<div class="header__logo">
+						<div class="header__img">
+							<a href="./main.html"><img src="assets/images/logo.svg" alt="Логотип"></a>
+						</div>
+					</div>
+					<nav class="header__nav nav">
+						<a class="nav__link" href="#">Услуги</a>
+						<a class="nav__link" href="#">Портфолио</a>
+						<a class="nav__link" href="#">Статьи</a>
+						<a class="nav__link" href="#">О нас</a>
+						<a class="nav__link" href="#">Контакты</a>
+						<a class="nav__link" href="tel:+7 (495) 859-21-36">+7 (495) 859-21-36</a>
+					</nav>
+					<a class="header__phone mobile" href="tel:+7 (495) 859-21-36">
+						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+							<path
+								d="M17.2571 19.5H17.1296C2.39214 18.6525 0.299644 6.2175 0.00714362 2.4225C-0.0164249 2.12744 0.0184601 1.83062 0.1098 1.54906C0.201139 1.2675 0.347138 1.00673 0.539432 0.781689C0.731725 0.55665 0.966533 0.371766 1.2304 0.23763C1.49427 0.103493 1.78201 0.0227414 2.07714 7.03193e-07H6.20964C6.51006 -0.00029012 6.80365 0.089633 7.05237 0.258122C7.30109 0.426611 7.49349 0.665903 7.60464 0.945001L8.74464 3.75C8.85441 4.02266 8.88165 4.32156 8.82298 4.60957C8.76431 4.89758 8.62232 5.162 8.41464 5.37L6.81714 6.9825C7.06668 8.40056 7.74578 9.70775 8.76256 10.7272C9.77935 11.7467 11.0847 12.4292 12.5021 12.6825L14.1296 11.07C14.3408 10.8646 14.6077 10.7259 14.8971 10.6713C15.1865 10.6166 15.4856 10.6483 15.7571 10.7625L18.5846 11.895C18.8595 12.0097 19.0941 12.2036 19.2583 12.452C19.4226 12.7004 19.5092 12.9922 19.5071 13.29V17.25C19.5071 17.8467 19.2701 18.419 18.8481 18.841C18.4262 19.2629 17.8539 19.5 17.2571 19.5ZM2.25714 1.5C2.05823 1.5 1.86747 1.57902 1.72681 1.71967C1.58616 1.86032 1.50714 2.05109 1.50714 2.25V2.31C1.85214 6.75 4.06464 17.25 17.2121 18C17.3107 18.0061 17.4094 17.9927 17.5028 17.9605C17.5961 17.9283 17.6822 17.8781 17.756 17.8126C17.8299 17.7471 17.8901 17.6676 17.9332 17.5788C17.9763 17.49 18.0014 17.3936 18.0071 17.295V13.29L15.1796 12.1575L13.0271 14.295L12.6671 14.25C6.14214 13.4325 5.25714 6.9075 5.25714 6.84L5.21214 6.48L7.34214 4.3275L6.21714 1.5H2.25714Z"
+								fill="white" />
+						</svg>
+					</a>
 				</div>
 			</div>
-			<div class="header-mobile">
-				<div class="header-mobile__container container">
-					<div class="header-mobile__inner">
-						<div class="header-mobile__burger burger" id="burger" tabindex="0">
-							<span></span>
-							<span></span>
-							<span></span>
-						</div>
-						<div class="header-mobile__logo ">
-							<a href="#"><img src="assets/images/logo.svg" alt="Логотип"></a>
-						</div>
-						<div class="header-mobile__phone">
-							<a class="icons__icon-phone" href="tel:84958592136"></a>
-						</div>
-					</div>
+			<div class="header__burger-menu burger-menu">
+				<div class="burger-menu__wrapper">
+					<a href="#" class="burger-menu__link">услуги</a>
+					<a href="#" class="burger-menu__link">Портфолио</a>
+					<a href="#" class="burger-menu__link">статьи</a>
+					<a href="#" class="burger-menu__link">о нас</a>
+					<a href="#" class="burger-menu__link">контакты</a>
 				</div>
 			</div>
 		</header>
-		<main class="main">
-			<section class="intro">
-				<div class="intro__container container">
-					<div class="intro__inner">
-						<div class="intro__title">РАЗРАБОТКА <span>УНИКАЛЬНЫХ</span> АРТОВ</div>
-						<div class="intro__pictures intro-pictures desktop">
-							<div class="intro-pictures__block intro-pictures__block--block-1">
-								<picture>
-									<source srcset="./assets/images/picture/img-1.webp" type="image/webp">
-									<img src="./assets/images/picture/img-1.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-2">
-								<picture>
-									<source srcset="./assets/images/picture/img-2.webp" type="image/webp">
-									<img src="./assets/images/picture/img-2.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-3">
-								<picture>
-									<source srcset="./assets/images/picture/img-3.webp" type="image/webp">
-									<img src="./assets/images/picture/img-3.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-4">
-								<picture>
-									<source srcset="./assets/images/picture/img-4.webp" type="image/webp">
-									<img src="./assets/images/picture/img-4.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-5">
-								<picture>
-									<source srcset="./assets/images/picture/img-5.webp" type="image/webp">
-									<img src="./assets/images/picture/img-5.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-6">
-								<picture>
-									<source srcset="./assets/images/picture/img-6.webp" type="image/webp">
-									<img src="./assets/images/picture/img-6.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-7">
-								<picture>
-									<source srcset="./assets/images/picture/img-7.webp" type="image/webp">
-									<img src="./assets/images/picture/img-7.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-8">
-								<picture>
-									<source srcset="./assets/images/picture/img-8.webp" type="image/webp">
-									<img src="./assets/images/picture/img-8.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-9">
-								<picture>
-									<source srcset="./assets/images/picture/img-9.webp" type="image/webp">
-									<img src="./assets/images/picture/img-9.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-10">
-								<picture>
-									<source srcset="./assets/images/picture/img-10.webp" type="image/webp">
-									<img src="./assets/images/picture/img-10.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-11">
-								<picture>
-									<source srcset="./assets/images/picture/img-11.webp" type="image/webp">
-									<img src="./assets/images/picture/img-11.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-12">
-								<picture>
-									<source srcset="./assets/images/picture/img-12.webp" type="image/webp">
-									<img src="./assets/images/picture/img-12.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-13">
-								<picture>
-									<source srcset="./assets/images/picture/img-13.webp" type="image/webp">
-									<img src="./assets/images/picture/img-13.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-14">
-								<picture>
-									<source srcset="./assets/images/picture/img-14.webp" type="image/webp">
-									<img src="./assets/images/picture/img-14.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-15">
-								<picture>
-									<source srcset="./assets/images/picture/img-15.webp" type="image/webp">
-									<img src="./assets/images/picture/img-15.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-16">
-								<picture>
-									<source srcset="./assets/images/picture/img-16.webp" type="image/webp">
-									<img src="./assets/images/picture/img-16.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-17">
-								<picture>
-									<source srcset="./assets/images/picture/img-17.webp" type="image/webp">
-									<img src="./assets/images/picture/img-17.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-18">
-								<picture>
-									<source srcset="./assets/images/picture/img-18.webp" type="image/webp">
-									<img src="./assets/images/picture/img-18.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-19">
-								<picture>
-									<source srcset="./assets/images/picture/img-19.webp" type="image/webp">
-									<img src="./assets/images/picture/img-19.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-20">
-								<picture>
-									<source srcset="./assets/images/picture/img-20.webp" type="image/webp">
-									<img src="./assets/images/picture/img-20.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-21">
-								<picture>
-									<source srcset="./assets/images/picture/img-21.webp" type="image/webp">
-									<img src="./assets/images/picture/img-21.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-22">
-								<picture>
-									<source srcset="./assets/images/picture/img-22.webp" type="image/webp">
-									<img src="./assets/images/picture/img-22.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-23">
-								<picture>
-									<source srcset="./assets/images/picture/img-23.webp" type="image/webp">
-									<img src="./assets/images/picture/img-23.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-24">
-								<picture>
-									<source srcset="./assets/images/picture/img-24.webp" type="image/webp">
-									<img src="./assets/images/picture/img-24.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-25">
-								<picture>
-									<source srcset="./assets/images/picture/img-25.webp" type="image/webp">
-									<img src="./assets/images/picture/img-25.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-26">
-								<picture>
-									<source srcset="./assets/images/picture/img-26.webp" type="image/webp">
-									<img src="./assets/images/picture/img-26.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-27">
-								<picture>
-									<source srcset="./assets/images/picture/img-27.webp" type="image/webp">
-									<img src="./assets/images/picture/img-27.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-28">
-								<picture>
-									<source srcset="./assets/images/picture/img-1.webp" type="image/webp">
-									<img src="./assets/images/picture/img-1.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-29">
-								<picture>
-									<source srcset="./assets/images/picture/img-10.webp" type="image/webp">
-									<img src="./assets/images/picture/img-10.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-30">
-								<picture>
-									<source srcset="./assets/images/picture/img-8.webp" type="image/webp">
-									<img src="./assets/images/picture/img-8.jpg" alt="">
-								</picture>
-							</div>
-							<div class="intro-pictures__block intro-pictures__block--block-31">
-								<picture>
-									<source srcset="./assets/images/picture/img-15.webp" type="image/webp">
-									<img src="./assets/images/picture/img-15.jpg" alt="">
-								</picture>
-							</div>
-						</div>
-						<div class="intro__pictures intro-pictures mobile"></div>
-						<div class="intro__footer intro-footer">
-							<div class="intro-footer__top">
-								<div class="intro-footer__left">разработем иллюстрацию, NFT, персонажа, придумаем
-									историю</div>
-								<div class="intro-footer__right">
-									<button class="btn btn--green">ОСТАВИТЬ ЗАЯВКУ</button>
-								</div>
-							</div>
-							<div class="intro-footer__bottom">
-								<button class="intro-footer__btn btn--detail">
-									<strong class="icons__icon-eye"></strong>
-									<span>СМОТРЕТЬ ДЕТАЛЬНЕЕ</span>
-								</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="nft">
-				<div class="nft-desktop">
-					<div class="nft-desktop__container container">
-						<div class="nft-desktop__inner">
-							<div class="nft-desktop__left">
-								<div class="nft-desktop__card nft-card nft-card--bg--rat">
-									<div class="nft-card__header">
-										<div class="nft-card__text">
-											<p class="nft-card__title">Request Art</p>
-											<p class="nft-card__subtitle">Разработано</p>
-										</div>
-										<div class="nft-card__icons">
-											<div class="nft-card__nft">NFT</div>
-											<div class="nft-card__logo">
-												<img src="assets/images/logo-min.svg" alt="Логотип">
-											</div>
-										</div>
-									</div>
-									<div class="nft-card__footer">
-										<div class="nft-card__name">Мышь сотрудник</div>
-										<div class="nft-card__coast">от <span>5000</span><sup>₽</sup></div>
-									</div>
-								</div>
-								<div class="nft-desktop__card nft-card nft-card--bg--snail">
-									<div class="nft-card__header">
-										<div class="nft-card__text">
-											<p class="nft-card__title">Request Art</p>
-											<p class="nft-card__subtitle">Разработано</p>
-										</div>
-										<div class="nft-card__icons">
-											<div class="nft-card__nft">NFT</div>
-											<div class="nft-card__logo">
-												<img src="assets/images/logo-min.svg" alt="Логотип">
-											</div>
-										</div>
-									</div>
-									<div class="nft-card__footer">
-										<div class="nft-card__name">Мышь сотрудник</div>
-										<div class="nft-card__coast">от <span>5000</span><sup>₽</sup></div>
-									</div>
-								</div>
-							</div>
-							<div class="nft-desktop__right">
-								<div class="nft-desktop__text">
-									<p class="nft-desktop__title">СОЗДАНИЕ ПЕРСОНАЖА NFT КОЛЛЕКЦИИ</p>
-									<p class="nft-desktop__description">Вы можете отправить нам референс отрисовки и мы
-										просчитаем стоимость и время. Стоимость и время исполнения зависит от сложности
-										иллюстраций.</p>
-								</div>
-								<button class="nft-desktop__btn btn" type="button">ЗАКАЗАТЬ ИЛЛЮСТРАЦИЮ</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="nft-mobile">
-					<div class="nft-mobile__container container">
-						<div class="nft-mobile__inner">
-							<div class="nft-mobile__top">
-								<div class="nft-mobile__text">
-									<p class="nft-mobile__title">СОЗДАНИЕ ПЕРСОНАЖА NFT КОЛЛЕКЦИИ</p>
-									<p class="nft-mobile__description">Вы можете отправить нам референс отрисовки и мы
-										просчитаем стоимость и время. Стоимость и время исполнения зависит от сложности
-										иллюстраций.</p>
-								</div>
-								<button class="nft-mobile__btn btn" type="button">ОСТАВИТЬ ЗАЯВКУ</button>
-							</div>
-							<div class="nft-mobile__bottom">
-								<div class="nft-mobile__slider swiper" id="nft-swiper">
-									<div class="nft-mobile__wrapper swiper-wrapper">
-										<div class="nft-mobile__card nft-card nft-card--bg--rat swiper-slide">
-											<div class="nft-card__header">
-												<div class="nft-card__text">
-													<p class="nft-card__title">Request Art</p>
-													<p class="nft-card__subtitle">Разработано</p>
-												</div>
-												<div class="nft-card__icons">
-													<div class="nft-card__nft">NFT</div>
-													<div class="nft-card__logo">
-														<img src="assets/images/logo-min.svg" alt="Логотип">
-													</div>
-												</div>
-											</div>
-											<div class="nft-card__footer">
-												<div class="nft-card__name">Мышь сотрудник</div>
-												<div class="nft-card__coast">от <span>5000</span><sup>₽</sup></div>
-											</div>
-										</div>
-										<div class="nft-mobile__card nft-card nft-card--bg--snail swiper-slide">
-											<div class="nft-card__header">
-												<div class="nft-card__text">
-													<p class="nft-card__title">Request Art</p>
-													<p class="nft-card__subtitle">Разработано</p>
-												</div>
-												<div class="nft-card__icons">
-													<div class="nft-card__nft">NFT</div>
-													<div class="nft-card__logo">
-														<img src="assets/images/logo-min.svg" alt="Логотип">
-													</div>
-												</div>
-											</div>
-											<div class="nft-card__footer">
-												<div class="nft-card__name">Мышь сотрудник</div>
-												<div class="nft-card__coast">от <span>5000</span><sup>₽</sup></div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="tariff">
-				<div class="tariff__container container">
-					<div class="tariff__inner">
-						<div class="tariff__header">
-							<p>ТАРИФЫ</p>
-						</div>
-						<div class="tariff__main">
-							<div class="tariff__item tariff-item">
-								<div class="tariff-item__name">Векторные иллюстрации</div>
-								<div class="tariff-item__info tariff-info">
-									<div class="tariff-info__coast">
-										<div class="tariff-info__value">от <span>5000</span><sup>₽</sup></div>
-										<div class="tariff-info__amount">Одна иллюстрация</div>
-									</div>
-									<div class="tariff-info__text">Включено сопровождение</div>
-									<button class="tariff-info__btn btn">ЗАКАЗАТЬ</button>
-								</div>
-								<div class="tariff-item__sunny tariff-icon">
-									<img src="assets/images/icons/content/tariff/sunny.svg" alt="">
-								</div>
-								<div class="tariff-item__shapes tariff-icon">
-									<img src="assets/images/icons/content/tariff/shapes.svg" alt="">
-								</div>
-							</div>
-							<div class="tariff__item tariff-item">
-								<div class="tariff-item__name">Векторные иллюстрации</div>
-								<div class="tariff-item__info tariff-info">
-									<div class="tariff-info__coast">
-										<div class="tariff-info__value">от <span>5000</span><sup>₽</sup></div>
-										<div class="tariff-info__amount">Одна иллюстрация</div>
-									</div>
-									<div class="tariff-info__text">Включено сопровождение</div>
-									<button class="tariff-info__btn btn">ЗАКАЗАТЬ</button>
-								</div>
-							</div>
-							<div class="tariff__item tariff-item">
-								<div class="tariff-item__name">Векторные иллюстрации</div>
-								<div class="tariff-item__info tariff-info">
-									<div class="tariff-info__coast">
-										<div class="tariff-info__value">от <span>5000</span><sup>₽</sup></div>
-										<div class="tariff-info__amount">Одна иллюстрация</div>
-									</div>
-									<div class="tariff-info__text">Включено сопровождение</div>
-									<button class="tariff-info__btn btn">ЗАКАЗАТЬ</button>
-									<div class="tariff-item__megafon tariff-icon">
-										<img src="assets/images/icons/content/tariff/megafon.svg" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="advantage">
-				<div class="advantage__container container">
-					<div class="advantage__inner">
-						<div class="advantage__left advantage-left">
-							<div class="advantage-left__title">НАШИ ПРЕИМУЩЕСТВА</div>
-							<div class="advantage-left__description">Сториборды, фотореалистичные изображения,
-								стилизации под гравюры, красивые иллюстрации для журналов — это к нам. Также мы
-								разрабатываем дизайн, который делает визуальную коммуникацию простой и понятной, по всем
-								направлениям — брендинг под ключ, логотипы, motion, веб-дизайн сайтов.</div>
-							<button class="advantage-left__btn btn btn--white">ОСТАВИТЬ ЗАЯВКУ</button>
-						</div>
-						<div class="advantage__right advantage-right">
-							<div class="advantage-right__inner desktop">
-								<div class="advantage-right__wrapper">
-									<div class="advantage-right__item advantage-item advantage-item--green">
-										<div class="advantage-item__header">
-											<div class="advantage-item__icon icons__icon-like"></div>
-											<div class="advantage-item__title">Работаем в большинстве современных стилей
-											</div>
-											<div class="advantage-item__description">Наши художники способны рисовать во
-												многих стилях, тем самым максимально качественно реализовать задачи
-												бизнеса
-											</div>
-										</div>
-										<div class="advantage-item__main">
-											<div class="advantage-item__img">
-												<div class="advantage-item__img--cover">
-													<img src="assets/images/icons/content/like.svg" alt="">
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="advantage-right__item advantage-item advantage-item--gray">
-										<div class="advantage-item__header">
-											<div class="advantage-item__icon icons__icon-like"></div>
-											<div class="advantage-item__title">Полное сопровождение в процессе
-												разработки
-											</div>
-											<div class="advantage-item__description">Мы полноценно курируем весь процесс
-												разработки. За Вами будет зазкреплен личный менеджер.
-											</div>
-										</div>
-										<div class="advantage-item__main">
-											<div class="advantage-item__img">
-												<div class="advantage-item__img--cover">
-													<img src="assets/images/icons/content/backward-item.svg" alt="">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="advantage-right__wrapper">
-									<div class="advantage-right__item advantage-item advantage-item--purple">
-										<div class="advantage-item__header">
-											<div class="advantage-item__icon icons__icon-designtools"></div>
-											<div class="advantage-item__title">Работаем в большинстве современных стилей
-											</div>
-											<div class="advantage-item__description">Мы полноценно курируем весь процесс
-												разработки. За Вами будет зазкреплен личный менеджер.
-											</div>
-										</div>
-										<div class="advantage-item__main">
-											<div class="advantage-item__img">
-												<div class="advantage-item__img--cover">
-													<img src="assets/images/icons/content/designtools-reverse.svg"
-														alt="">
-												</div>
-											</div>
-											<div class="advantage-item__range">
-												<img src="assets/images/icons/content/advantage/range.svg" alt="">
-											</div>
-										</div>
-									</div>
-									<div class="advantage-right__item advantage-item advantage-item--orange">
-										<div class="advantage-item__header">
-											<div class="advantage-item__icon icons__icon-like"></div>
-											<div class="advantage-item__title">Выполняем задачи комплексно, под ключ
-											</div>
-											<div class="advantage-item__description">Обратившись к нам, вы получите
-												единый
-												комплекс материалов под ключ</div>
-										</div>
-										<div class="advantage-item__main">
-											<div class="advantage-item__img">
-												<div class="advantage-item__img--cover">
-													<img src="assets/images/icons/content/cube.svg" alt="">
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="advantage-right__inner mobile">
-								<div class="advantage-right__slider swiper">
-									<div class="advantage-right__slider-wrapper swiper-wrapper">
-										<div
-											class="advantage-right__item advantage-item advantage-item--green swiper-slide">
-											<div class="advantage-item__header">
-												<div class="advantage-item__icon icons__icon-like"></div>
-												<div class="advantage-item__title">Работаем в большинстве современных
-													стилей
-												</div>
-												<div class="advantage-item__description">Наши художники способны
-													рисовать во
-													многих стилях, тем самым максимально качественно реализовать задачи
-													бизнеса
-												</div>
-											</div>
-											<div class="advantage-item__main">
-												<div class="advantage-item__img">
-													<div class="advantage-item__img--cover">
-														<img src="assets/images/icons/content/like.svg" alt="">
-													</div>
-												</div>
-											</div>
-										</div>
-										<div
-											class="advantage-right__item advantage-item advantage-item--purple swiper-slide">
-											<div class="advantage-item__header">
-												<div class="advantage-item__icon icons__icon-designtools"></div>
-												<div class="advantage-item__title">Работаем в большинстве современных
-													стилей
-												</div>
-												<div class="advantage-item__description">Мы полноценно курируем весь
-													процесс
-													разработки. За Вами будет зазкреплен личный менеджер.
-												</div>
-											</div>
-											<div class="advantage-item__main">
-												<div class="advantage-item__img">
-													<div class="advantage-item__img--cover">
-														<img src="assets/images/icons/content/designtools-reverse.svg"
-															alt="">
-													</div>
-												</div>
-												<div class="advantage-item__range">
-													<img src="assets/images/icons/content/advantage/range.svg" alt="">
-												</div>
-											</div>
-										</div>
-										<div
-											class="advantage-right__item advantage-item advantage-item--gray swiper-slide">
-											<div class="advantage-item__header">
-												<div class="advantage-item__icon icons__icon-like"></div>
-												<div class="advantage-item__title">Полное сопровождение в процессе
-													разработки
-												</div>
-												<div class="advantage-item__description">Мы полноценно курируем весь
-													процесс
-													разработки. За Вами будет зазкреплен личный менеджер.
-												</div>
-											</div>
-											<div class="advantage-item__main">
-												<div class="advantage-item__img">
-													<div class="advantage-item__img--cover">
-														<img src="assets/images/icons/content/backward-item.svg" alt="">
-													</div>
-												</div>
-											</div>
-										</div>
-										<div
-											class="advantage-right__item advantage-item advantage-item--orange swiper-slide">
-											<div class="advantage-item__header">
-												<div class="advantage-item__icon icons__icon-like"></div>
-												<div class="advantage-item__title">Выполняем задачи комплексно, под ключ
-												</div>
-												<div class="advantage-item__description">Обратившись к нам, вы получите
-													единый
-													комплекс материалов под ключ</div>
-											</div>
-											<div class="advantage-item__main">
-												<div class="advantage-item__img">
-													<div class="advantage-item__img--cover">
-														<img src="assets/images/icons/content/cube.svg" alt="">
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="links">
-				<div class="links__inner">
-					<a class="links__item" href="#">WEB - ИЛЛЮСТРАЦИИ</a>
-					<a class="links__item" href="#">ИКОНКИ, ЛОГОТИПЫ</a>
-					<a class="links__item" href="#">ГЕЙМДЕВ</a>
-					<a class="links__item" href="#">NFT-КОЛЛЕКЦИИ</a>
-					<a class="links__item" href="#">РАЗРАБОТКА ПЕРСОНАЖЕЙ</a>
-					<button class="links__item link-form" type="button">ФОРМА ОБРАТНОЙ СВЯЗИ</button>
-				</div>
-			</section>
+		<main>
+
 		</main>
 		<footer class="footer">
-			<div class="footer-desktop">
-				<div class="footer-desktop__container container">
-					<div class="footer-desktop__inner">
-						<div class="footer-desktop__content desktop-content">
-							<div class="desktop-content__item content-item">
-								<div class="content-item__wrapper">
-									<p class="content-item__title">Иллюстрации</p>
-									<ul class="content-item__list content-item__list--width--26">
-										<li><a href="#">Каталог</a></li>
-										<li><a href="#">NFT</a></li>
-										<li><a href="#">Gamedev</a></li>
-										<li><a href="#">Популярное</a></li>
-										<li><a href="#">Коммерческие</a></li>
-										<li><a href="#">Логотипы</a></li>
-									</ul>
-								</div>
-								<div class="content-item__copyright">&copy; Все права защищены</div>
-							</div>
-							<div class="desktop-content__item content-item">
-								<div class="content-item__wrapper">
-									<p class="content-item__title">Заказ</p>
-									<ul class="content-item__list">
-										<li><a href="#">Связаться с нами</a></li>
-									</ul>
-								</div>
-								<div class="content-item__social social">
-									<ul class="social__list">
-										<li><a class="icons__icon-telegram" href="#"></a></li>
-										<li><a class="icons__icon-youtube" href="#"></a></li>
-										<li><a class="icons__icon-whatsapp" href="#"></a></li>
-									</ul>
+			<div class="footer__container container">
+				<div class="footer__inner">
+					<div class="footer__top">
+						<div class="footer__sitemap footer-sitemap">
+							<div class="footer-sitemap__item sitemap-item">
+								<div class="sitemap-item__title text-m-28">Иллюстрации</div>
+								<div class="sitemap-item__list text-20">
+									<a class="sitemap-item__link" href="#">Каталог</a>
+									<a class="sitemap-item__link" href="#">NFT</a>
+									<a class="sitemap-item__link" href="#">Gamedev</a>
+									<a class="sitemap-item__link" href="#">Популярное</a>
+									<a class="sitemap-item__link" href="#">Коммерческие</a>
+									<a class="sitemap-item__link" href="#">Логотипы</a>
 								</div>
 							</div>
-							<div class="desktop-content__item content-item">
-								<div class="content-item__wrapper">
-									<p class="content-item__title">О нас</p>
-									<ul class="content-item__list">
-										<li><a href="#">О студии</a></li>
-										<li><a href="#">Контакты</a></li>
-									</ul>
+							<div class="footer-sitemap__item sitemap-item">
+								<div class="sitemap-item__title text-m-28">Заказ</div>
+								<div class="sitemap-item__list text-20">
+									<button class="sitemap-item__link" type="button">Связаться с нами</button>
 								</div>
-								<div class="content-item__politic">
-									<div class="content-item__phone"><a href="tel:84958592136">+7 (495) 859-21-36</a>
-									</div>
-									<div class="content-item__text"><a href="#">Политика по защите данных</a></div>
+							</div>
+							<div class="footer-sitemap__item sitemap-item">
+								<div class="sitemap-item__title text-m-28">О нас</div>
+								<div class="sitemap-item__list text-20">
+									<a class="sitemap-item__link" href="#">О студии</a>
+									<a class="sitemap-item__link" href="#">Контакты</a>
 								</div>
 							</div>
 						</div>
-						<p class="footer-desktop__title">РАЗРАБОТКА УНИКАЛЬНЫХ АРТОВ</p>
 					</div>
-				</div>
-			</div>
-			<div class="footer-mobile">
-				<div class="footer-mobile__container container">
-					<div class="footer-mobile__inner">
-						<div class="footer-mobile__content mobile-content">
-							<div class="mobile-content__top mobile-top">
-								<div class="mobile-top__item">
-									<p class="mobile-top__title">Иллюстрации</p>
-									<ul class="mobile-top__list">
-										<li><a href="#">Каталог</a></li>
-										<li><a href="#">NFT</a></li>
-										<li><a href="#">Gamedev</a></li>
-										<li><a href="#">Популярное</a></li>
-										<li><a href="#">Коммерческие</a></li>
-										<li><a href="#">Логотипы</a></li>
-									</ul>
-								</div>
-								<div class="mobile-top__item">
-									<div class="mobile-top__wrapper">
-										<p class="mobile-top__title">Заказ</p>
-										<ul class="mobile-top__list">
-											<li><a href="#">Связаться с нами</a></li>
-										</ul>
-									</div>
-									<div class="mobile-top__wrapper">
-										<p class="mobile-top__title">О нас</p>
-										<ul class="mobile-top__list">
-											<li><a href="#">О студии</a></li>
-											<li><a href="#">Контакты</a></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-							<div class="mobile-content__bottom mobile-bottom">
-								<div class="mobile-bottom__info">
-									<div class="mobile-bottom__phone"><a href="tel:84958592136">+7 (495) 859-21-36</a>
-									</div>
-									<div class="mobile-bottom__politic"><a href="#">Политика по защите данных</a>
-									</div>
-									<div class="mobile-bottom__copyright">&copy; Все права защищены</div>
-								</div>
-								<div class="mobile-bottom__social social">
-									<ul class="social__list">
-										<li><a class="icons__icon-telegram" href="#"></a></li>
-										<li><a class="icons__icon-youtube" href="#"></a></li>
-										<li><a class="icons__icon-whatsapp" href="#"></a></li>
-									</ul>
-								</div>
-							</div>
+					<div class="footer__middle">
+						<div class="footer__copyright">&copy; Все права защищены</div>
+						<div class="footer__social social">
+							<a class="social__link" href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="21" height="18" viewBox="0 0 21 18"
+									fill="none">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M16.8913 16.9981L20.0649 0.997858L20.0648 0.998136C20.0648 -0.0670723 18.6001 0.576439 18.6001 0.576439L0.780516 7.56678C0.780516 7.56678 -0.062878 7.85522 0.00374954 8.38783C0.0703771 8.92043 0.758307 9.16446 0.758307 9.16446L5.24095 10.6736L5.24244 10.6743C5.24227 10.6737 5.24219 10.6735 5.24219 10.6735L16.005 3.83858C16.005 3.83858 16.6265 3.4613 16.6043 3.83858C16.6043 3.83858 16.7152 3.9052 16.3822 4.21586C16.0495 4.52665 7.92742 11.8275 7.92742 11.8275L7.91116 11.9662L15.227 17.5751C16.4476 18.1077 16.8913 16.9981 16.8913 16.9981Z"
+										fill="#FAD85D" />
+									<path
+										d="M10.7144 14.1135L7.81792 16.7544C7.81792 16.7544 7.59138 16.9263 7.34375 16.8185L7.89842 11.9131"
+										fill="#FAD85D" />
+								</svg>
+							</a>
+							<a class="social__link" href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25"
+									fill="none">
+									<g clip-path="url(#clip0_801_529)">
+										<path
+											d="M23.4372 7.03573C23.3046 6.56258 23.0462 6.13421 22.6896 5.79617C22.3229 5.44773 21.8735 5.19849 21.3837 5.07196C19.5507 4.58882 12.2071 4.58882 12.2071 4.58882C9.1456 4.55399 6.08487 4.70719 3.04218 5.04756C2.5524 5.18343 2.10379 5.43825 1.73625 5.78934C1.37512 6.1368 1.11355 6.56528 0.976904 7.03475C0.648659 8.80306 0.489175 10.5986 0.500602 12.397C0.48889 14.1939 0.647983 15.9888 0.976904 17.7593C1.11062 18.2269 1.37122 18.6534 1.73333 18.9979C2.09543 19.3425 2.54636 19.5913 3.04218 19.7231C4.89956 20.2053 12.2071 20.2053 12.2071 20.2053C15.2724 20.2401 18.3371 20.0869 21.3837 19.7465C21.8735 19.62 22.3229 19.3708 22.6896 19.0223C23.0461 18.6843 23.3042 18.2559 23.4363 17.7828C23.7731 16.0151 23.9369 14.2189 23.9253 12.4195C23.9506 10.6125 23.787 8.80777 23.4372 7.03475V7.03573ZM9.87242 15.739V9.0561L15.9823 12.398L9.87242 15.739Z"
+											fill="#FAD85D" />
+									</g>
+									<defs>
+										<clipPath id="clip0_801_529">
+											<rect width="23.4247" height="23.4247" fill="white"
+												transform="translate(0.5 0.68457)" />
+										</clipPath>
+									</defs>
+								</svg>
+							</a>
+							<a class="social__link" href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="22" height="21" viewBox="0 0 22 21"
+									fill="none">
+									<path
+										d="M0.621366 20.8219L2.02893 15.6497C1.10145 14.0598 0.614178 12.2516 0.617201 10.411C0.617201 4.66098 5.27819 0 11.0282 0C16.7781 0 21.4391 4.66098 21.4391 10.411C21.4391 16.1609 16.7781 20.8219 11.0282 20.8219C9.18831 20.8249 7.38084 20.338 5.79144 19.4112L0.621366 20.8219ZM7.27084 5.52613C7.1364 5.53448 7.00502 5.56989 6.8846 5.63024C6.77166 5.6942 6.66856 5.77415 6.57851 5.86761C6.45358 5.98526 6.38279 6.08728 6.30679 6.18619C5.92201 6.68695 5.71504 7.30164 5.71857 7.93315C5.72065 8.44328 5.85391 8.93989 6.06213 9.40421C6.48794 10.3433 7.18859 11.3375 8.11413 12.2589C8.33692 12.4806 8.55451 12.7034 8.78876 12.9106C9.93749 13.922 11.3064 14.6514 12.7866 15.0407L13.3789 15.1313C13.5715 15.1417 13.7642 15.1271 13.9578 15.1177C14.261 15.1021 14.5571 15.02 14.825 14.8773C14.9614 14.807 15.0944 14.7306 15.2238 14.6482C15.2238 14.6482 15.2685 14.6191 15.3539 14.5545C15.4945 14.4504 15.5801 14.3886 15.6975 14.2547C15.796 14.1422 15.8588 14.06 15.9161 13.9403C15.9973 13.7706 16.0785 13.4468 16.1118 13.1771C16.1368 12.971 16.1295 12.8586 16.1264 12.7888C16.1222 12.6774 16.0296 12.5619 15.9286 12.5129L15.3227 12.2412C15.3227 12.2412 14.4169 11.8466 13.8641 11.5947C13.8058 11.5693 13.7433 11.5548 13.6798 11.552C13.6086 11.5447 13.5366 11.5527 13.4687 11.5755C13.4009 11.5983 13.3387 11.6354 13.2863 11.6842V11.6821C13.2811 11.6821 13.2113 11.7415 12.4586 12.6535C12.4154 12.7115 12.3559 12.7554 12.2877 12.7795C12.2194 12.8036 12.1456 12.8068 12.0755 12.7888C12.0077 12.7707 11.9412 12.7477 11.8766 12.7201C11.7476 12.666 11.7028 12.6451 11.6143 12.6066L11.6091 12.6045C11.0135 12.3445 10.462 11.9933 9.97457 11.5634C9.84339 11.4489 9.72158 11.324 9.59665 11.2032C9.18706 10.811 8.8301 10.3672 8.53473 9.88312L8.47331 9.78421C8.42919 9.71775 8.39352 9.64606 8.36711 9.57079C8.32755 9.41775 8.43062 9.2949 8.43062 9.2949C8.43062 9.2949 8.68361 9.01797 8.80125 8.86805C8.89921 8.74345 8.9906 8.61383 9.07506 8.47972C9.19791 8.28191 9.23643 8.0789 9.17188 7.92169C8.88037 7.20958 8.57846 6.5006 8.26821 5.79682C8.20679 5.65731 8.02459 5.55737 7.85906 5.53759C7.80284 5.53134 7.74662 5.52509 7.6904 5.52093C7.55059 5.51398 7.41049 5.51641 7.27084 5.52613Z"
+										fill="#FAD85D" />
+								</svg>
+							</a>
 						</div>
-						<p class="footer-mobile__title">РАЗРАБОТКА УНИКАЛЬНЫХ АРТОВ</p>
+						<div class="footer__info">
+							<a class="footer__phone" href="tel:+7 (495) 859-21-36">+7 (495) 859-21-36</a>
+							<a class="footer__politic" href="#">Политика по защите данных</a>
+						</div>
 					</div>
+					<div class="footer__bottom-text h1">РАЗРАБОТКА УНИКАЛЬНЫХ АРТОВ</div>
 				</div>
 			</div>
 		</footer>
 	</div>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </body>
 
 </html>

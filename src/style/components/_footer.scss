@@ -1,0 +1,238 @@
+.footer {
+	background-color: $yellow;
+	color: $main;
+	// .footer__inner
+	&__inner {
+		padding: 7rem 0;
+	}
+	// .footer__top
+	&__top {
+		margin-bottom: 8rem;
+	}
+	// .footer__sitemap
+	&__sitemap {
+		gap: 20rem;
+	}
+	// .footer__middle
+	&__middle {
+		display: flex;
+		gap: 20rem;
+		align-items: flex-end;
+	}
+	// .footer__copyright
+	&__copyright {
+		color: $main;
+		font-size: 2rem;
+		width: 59.528rem;
+	}
+	// .footer__social
+	&__social {
+		gap: 1.6rem;
+	}
+	// .footer__info
+	&__info {
+		display: flex;
+		flex-direction: column;
+		margin-left: auto;
+		gap: 2.5rem;
+	}
+	// .footer__phone
+	&__phone {
+		color: $main;
+		font-size: 3.2rem;
+		line-height: normal;
+
+		&:hover,
+		&:focus-visible,
+		&:active {
+			text-decoration: underline;
+		}
+	}
+	// .footer__politic
+	&__politic {
+		color: $main;
+		font-size: 2rem;
+		line-height: normal;
+
+		position: relative;
+
+		&::after {
+			content: "";
+			width: 100%;
+			height: 0.15rem;
+			background-color: $main;
+
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			z-index: 1;
+		}
+
+		&:hover,
+		&:focus-visible {
+			&::after {
+				display: none;
+			}
+		}
+	}
+	// .footer__bottom-text
+	&__bottom-text {
+		line-height: 0.86;
+		margin-top: 12rem;
+	}
+}
+.footer-sitemap {
+	display: flex;
+	// .footer-sitemap__item
+	&__item {
+		&:nth-child(1) {
+			.sitemap-item__list {
+				grid-template-columns: repeat(3, 1fr);
+			}
+		}
+		&:nth-child(2) {
+			.sitemap-item__list {
+				grid-template-columns: 1fr;
+			}
+		}
+		&:nth-child(3) {
+			margin-left: auto;
+			.sitemap-item__list {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
+	}
+}
+.sitemap-item {
+	// .sitemap-item__title
+	&__title {
+		margin-bottom: 3.2rem;
+	}
+	// .sitemap-item__list
+	&__list {
+		line-height: normal;
+		display: grid;
+		gap: 2rem 8rem;
+	}
+	// .sitemap-item__link
+	&__link {
+		line-height: inherit;
+		white-space: nowrap;
+		background: none;
+
+		&:hover,
+		&:focus-visible,
+		&:active {
+			text-decoration: underline;
+		}
+	}
+}
+
+@media (max-width: 48em) {
+	.footer {
+		background-color: $yellow;
+		color: $main;
+		// .footer__inner
+		&__inner {
+			padding: 10rem 0 17.8rem;
+		}
+		// .footer__top
+		&__top {
+			margin-bottom: 8.4rem;
+		}
+		// .footer__sitemap
+		&__sitemap {
+			padding-left: 4.4rem;
+			gap: 3rem;
+		}
+		// .footer__middle
+		&__middle {
+			display: flex;
+			flex-direction: column;
+			gap: 2rem;
+			align-items: center;
+		}
+		// .footer__copyright
+		&__copyright {
+			order: 2;
+			text-align: center;
+			font-size: 2.4rem;
+			width: 100%;
+		}
+		// .footer__social
+		&__social {
+			gap: 6rem;
+			order: 3;
+			margin-top: 5.6rem;
+		}
+		// .footer__info
+		&__info {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			margin-left: 0;
+			gap: 1rem;
+			order: 1;
+		}
+		// .footer__phone
+		&__phone {
+			font-size: 3.6rem;
+		}
+		// .footer__politic
+		&__politic {
+			color: $main;
+			font-size: 3rem;
+
+			position: relative;
+
+			&::after {
+				display: none;
+			}
+		}
+		// .footer__bottom-text
+		&__bottom-text {
+			text-align: center;
+			line-height: 1.1;
+			margin-top: 10.4rem;
+		}
+	}
+	.footer-sitemap {
+		display: grid;
+		grid-template-columns: repeat(2, 28rem);
+		grid-auto-flow: dense;
+		// .footer-sitemap__item
+		&__item {
+			&:nth-child(1) {
+				grid-row: span 2;
+			}
+			&:nth-child(3) {
+				margin-left: 0;
+			}
+		}
+	}
+	.sitemap-item {
+		// .sitemap-item__title
+		&__title {
+			margin-bottom: 2rem;
+		}
+		// .sitemap-item__list
+		&__list {
+			line-height: normal;
+			display: flex;
+			flex-direction: column;
+			gap: 1.6rem;
+		}
+		// .sitemap-item__link
+		&__link {
+			line-height: inherit;
+			white-space: nowrap;
+			background: none;
+
+			&:hover,
+			&:focus-visible,
+			&:active {
+				text-decoration: underline;
+			}
+		}
+	}
+}

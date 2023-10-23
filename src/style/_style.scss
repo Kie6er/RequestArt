@@ -11,9 +11,9 @@ $bodyColor: #1f1f22;
 $pink: #ed89fb;
 $violet: #cad2f4;
 $green: #c9fb40;
-$orange: #fad85d;
+$yellow: #fad85d;
 $darkGray: #6a6a6a;
-$main: #1f1f22;
+$main: #282828;
 
 // Настройки ==============================================
 $sectionMargin: 16rem; // Отступ у секций
@@ -23,3 +23,274 @@ $containerPadding: 2rem; // (x2) Отсутп контейнера на моби
 $containerWidth: 172rem; // Ширина контейнера
 
 // Основные стили =========================================
+.page {
+	overflow-x: hidden;
+}
+
+main {
+	padding-top: 6.7rem;
+}
+
+body {
+	&.lock {
+		overflow: hidden;
+		touch-action: none;
+	}
+}
+
+.h1 {
+	font-family: "Druk Cyr";
+	font-size: 19.9646rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 23.387rem; /* 117.143% */
+}
+
+.h2 {
+	font-family: "Druk Cyr";
+	font-size: 10rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 110%; /* 110px */
+}
+
+.h3 {
+	font-family: "Druk Cyr";
+	font-size: 2rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 84%; /* 16.8px */
+	letter-spacing: 0.16rem;
+}
+
+.h4 {
+	font-size: 1.8rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.text-32 {
+	font-size: 3.2rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.text-m-28 {
+	font-size: 2.8rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+}
+
+.text-m-20 {
+	font-family: "Druk Cyr";
+	font-size: 2.0093rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 84%; /* 16.878px */
+	letter-spacing: 0.1607rem;
+}
+
+.text-20 {
+	font-size: 2rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 140%; /* 28px */
+}
+
+.text-16 {
+	font-size: 1.6rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	// .nav__link
+	&__link {
+		display: block;
+		font-size: 2rem;
+		line-height: 140%; /* 28px */
+		transition: color 0.2s linear;
+
+		&:hover,
+		&:focus-visible {
+			transition: color 0.2s linear;
+			color: $green;
+		}
+	}
+}
+
+.social {
+	display: flex;
+	align-items: center;
+	// .social__link
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 5.2rem;
+		height: 5.2rem;
+		background-color: $main;
+		border-radius: 50%;
+		transition: background 0.2s linear;
+
+		svg {
+			width: 2.2rem;
+			height: 2.2rem;
+		}
+
+		&:hover {
+			transition: background 0.2s linear;
+			background-color: $white;
+		}
+	}
+}
+
+@media (max-width: 48em) {
+	main {
+		padding-top: 12.6rem;
+	}
+	.h1 {
+		font-size: 11rem;
+		line-height: 110%; /* 60.5px */
+	}
+
+	.h3 {
+		font-size: 4rem;
+		letter-spacing: 0.32rem;
+	}
+
+	.h4 {
+		font-size: 3.6rem;
+	}
+
+	.text-32 {
+		font-size: 3.2rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+
+	.text-m-28 {
+		font-size: 3.6rem;
+	}
+
+	.text-m-20 {
+		font-family: "Druk Cyr";
+		font-size: 2.0093rem;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 84%; /* 16.878px */
+		letter-spacing: 0.1607rem;
+	}
+
+	.text-20 {
+		font-size: 2.8rem;
+		line-height: normal; /* 28px */
+	}
+
+	.text-16 {
+		font-size: 1.6rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+
+	.burger-btn {
+		&__btn {
+			width: 100%;
+			height: 100%;
+
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			gap: 1.4rem;
+
+			span {
+				display: block;
+				width: 100%;
+				height: 0.6rem;
+				background-color: $white;
+				border-radius: 2.4rem;
+			}
+		}
+
+		&__close {
+			display: none;
+		}
+
+		&.open {
+			.burger-btn__btn {
+				display: none;
+			}
+			.burger-btn__close {
+				display: block;
+				width: 4rem;
+				height: 4rem;
+			}
+		}
+	}
+
+	.burger-menu {
+		display: none;
+
+		width: 100%;
+		height: calc(100vh - 12.6rem);
+		background-color: #f0f1f4;
+
+		&.show {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+		// .burger-menu__wrapper
+		&__wrapper {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+		// .burger-menu__link
+		&__link {
+			display: flex;
+			justify-content: center;
+
+			width: 100%;
+			color: $main;
+			font-family: "Druk Cyr";
+			font-size: 10rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 110%; /* 55px */
+			text-transform: uppercase;
+			padding: 2.4rem 0;
+
+			&:not(:last-child) {
+				border-bottom: 0.2rem solid #282828;
+			}
+
+			&:hover,
+			&:active,
+			&:focus-visible {
+				background-color: $pink;
+			}
+		}
+	}
+
+	.social {
+		// .social__link
+		&__link {
+			width: 8rem;
+			height: 8rem;
+
+			svg {
+				width: 3.6rem;
+				height: 3.6rem;
+			}
+		}
+	}
+}
