@@ -1,24 +1,23 @@
 @font-face {
 	font-family: "Druk Cyr";
-	src: url("../fonts/DrukCyr-Medium.eot");
-	// ../../fonts/DrukCyr-Medium.eot
+	src: url("../assets/fonts/DrukCyr-Medium.eot");
 	src:
-		url("../fonts/DrukCyr-Medium.eot?#iefix") format("embedded-opentype"),
-		url("../fonts/DrukCyr-Medium.woff2") format("woff2"),
-		url("../fonts/DrukCyr-Medium.woff") format("woff"),
-		url("../fonts/DrukCyr-Medium.ttf") format("truetype");
+		url("../assets/fonts/DrukCyr-Medium.eot?#iefix") format("embedded-opentype"),
+		url("../assets/fonts/DrukCyr-Medium.woff2") format("woff2"),
+		url("../assets/fonts/DrukCyr-Medium.woff") format("woff"),
+		url("../assets/fonts/DrukCyr-Medium.ttf") format("truetype");
 	font-weight: 500;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: "Euclid Circular A";
-	src: url("../fonts/EuclidCircularA-Medium.eot");
+	src: url("../assets/fonts/EuclidCircularA-Medium.eot");
 	src:
-		url("../fonts/EuclidCircularA-Medium.eot?#iefix") format("embedded-opentype"),
-		url("../fonts/EuclidCircularA-Medium.woff2") format("woff2"),
-		url("../fonts/EuclidCircularA-Medium.woff") format("woff"),
-		url("../fonts/EuclidCircularA-Medium.ttf") format("truetype");
+		url("../assets/fonts/EuclidCircularA-Medium.eot?#iefix") format("embedded-opentype"),
+		url("../assets/fonts/EuclidCircularA-Medium.woff2") format("woff2"),
+		url("../assets/fonts/EuclidCircularA-Medium.woff") format("woff"),
+		url("../assets/fonts/EuclidCircularA-Medium.ttf") format("truetype");
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
@@ -26,12 +25,12 @@
 
 @font-face {
 	font-family: "Euclid Circular A";
-	src: url("../fonts/EuclidCircularA-Regular.eot");
+	src: url("../assets/fonts/EuclidCircularA-Regular.eot");
 	src:
-		url("../fonts/EuclidCircularA-Regular.eot?#iefix") format("embedded-opentype"),
-		url("../fonts/EuclidCircularA-Regular.woff2") format("woff2"),
-		url("../fonts/EuclidCircularA-Regular.woff") format("woff"),
-		url("../fonts/EuclidCircularA-Regular.ttf") format("truetype");
+		url("../assets/fonts/EuclidCircularA-Regular.eot?#iefix") format("embedded-opentype"),
+		url("../assets/fonts/EuclidCircularA-Regular.woff2") format("woff2"),
+		url("../assets/fonts/EuclidCircularA-Regular.woff") format("woff"),
+		url("../assets/fonts/EuclidCircularA-Regular.ttf") format("truetype");
 	font-weight: 400;
 	font-style: normal;
 	font-display: swap;
@@ -39,12 +38,12 @@
 
 @font-face {
 	font-family: "Euclid Circular A";
-	src: url("../fonts/EuclidCircularA-SemiBold.eot");
+	src: url("../assets/fonts/EuclidCircularA-SemiBold.eot");
 	src:
-		url("../fonts/EuclidCircularA-SemiBold.eot?#iefix") format("embedded-opentype"),
-		url("../fonts/EuclidCircularA-SemiBold.woff2") format("woff2"),
-		url("../fonts/EuclidCircularA-SemiBold.woff") format("woff"),
-		url("../fonts/EuclidCircularA-SemiBold.ttf") format("truetype");
+		url("../assets/fonts/EuclidCircularA-SemiBold.eot?#iefix") format("embedded-opentype"),
+		url("../assets/fonts/EuclidCircularA-SemiBold.woff2") format("woff2"),
+		url("../assets/fonts/EuclidCircularA-SemiBold.woff") format("woff"),
+		url("../assets/fonts/EuclidCircularA-SemiBold.ttf") format("truetype");
 	font-weight: 600;
 	font-style: normal;
 	font-display: swap;
