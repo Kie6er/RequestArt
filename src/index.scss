@@ -1,0 +1,19 @@
+@import "style/fonts";
+@import "style/libs/reset";
+@import "style/style";
+@import "style/components/header";
+@import "style/components/footer";
+
+.desktop {
+	@media (max-width: 48em) {
+		display: none;
+	}
+}
+
+.mobile {
+	display: none;
+
+	@media (max-width: 48em) {
+		display: block;
+	}
+}
