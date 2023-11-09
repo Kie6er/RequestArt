@@ -151,6 +151,48 @@ body {
 	}
 }
 
+.btn {
+	color: #1f1f22;
+	font-family: "Druk Cyr";
+	font-size: 2rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 84%; /* 16.878px */
+	letter-spacing: 0.1607rem;
+	text-transform: uppercase;
+
+	background: none;
+
+	display: flex;
+	align-items: center;
+	gap: 2.6rem;
+	padding: 1.6rem 1.6rem 1.9rem 3.3rem;
+	border-radius: 9.5rem;
+	border: 0.1rem solid #1f1f22;
+	transition:
+		background 0.2s linear,
+		color 0.2s linear;
+
+	svg {
+		transition: fill 0.2s linear;
+		width: 1rem;
+		height: 1.4rem;
+		fill: #1f1f22;
+	}
+
+	&:hover {
+		transition:
+			background 0.2s linear,
+			color 0.2s linear;
+		background: #1f1f22;
+		color: $white;
+		svg {
+			transition: fill 0.2s linear;
+			fill: $white;
+		}
+	}
+}
+
 @media (max-width: 48em) {
 	main {
 		padding-top: 12.6rem;
@@ -291,6 +333,23 @@ body {
 				width: 3.6rem;
 				height: 3.6rem;
 			}
+		}
+	}
+
+	.btn {
+		color: #1f1f22;
+		font-family: "Druk Cyr";
+		font-size: 4rem;
+		letter-spacing: 0.32rem;
+
+		gap: 4rem;
+		padding: 3rem 6rem;
+		border-radius: 19rem;
+		border: 0.2rem solid #1f1f22;
+
+		svg {
+			width: 2rem;
+			height: 2.8rem;
 		}
 	}
 }
